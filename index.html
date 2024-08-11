@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EatSmart Nutrition Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>EatSmart Nutrition Calculator</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="savedrecipes.html">Saved Recipes</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="newsletter.html">Newsletter</a>
+
+    </nav>
+    <div class="wrapper">
+        <div class="main-content">
+            <h2>Nutrition Calculator</h2>
+            <p>Enter an ingredient list for what you are cooking, like "1 cup rice, 10 oz chickpeas", etc.
+                Enter each ingredient on a new line.</p>
+            <div id="analysis"> 
+                <form id="analysis-form">
+                    <textarea name="" id="ingredients" cols="40" rows="10" class="form-control">1 cup rice
+10 oz chickpeas</textarea>
+                </form>
+                <input type="text" id="recipe-name" placeholder="Recipe Name" class="form-control" required /><br><br>
+                <button type="button" class="index-button" id="analysis-button">Analyze</button>
+                <button type="button" class="index-button" id="save-recipe-button">Save recipe</button>
+                <div id="results">
+                    <table class="table" id="results-table">
+                        <thead>
+                            <tr>
+                                <th>Qty</th>
+                                <th>Unit</th>
+                                <th>Food</th>
+                                <th>Calories</th>
+                                <th>Fat (g)</th>
+                                <th>Carbohydrates (g)</th>
+                                <th>Protein (g)</th>
+                                <th>Weight (g)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-body">
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total:</td>
+                                <td id="total-calories">0 kcal</td>
+                                <td id="total-fat">0 g</td>
+                                <td id="total-carbs">0 g</td>
+                                <td id="total-protein">0 g</td>
+                                <td id="total-weight">0 g</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 EatSmart</p>
+    </footer>
+</body>
+</html>

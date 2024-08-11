@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>EatSmart Nutrition Calculator</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="savedrecipes.html">Saved Recipes</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="newsletter.html">Newsletter</a>
+    </nav>
+    <div class="wrapper">
+        <div class="main-content">
+            <h2>Newsletter Subscription</h2>
+            <p>Subscribe to our newsletter to get the latest updates on nutrition and healthy eating tips.</p>
+            
+            <!-- Subscription form starts here -->
+            <form id="subscription-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="frequency">Newsletter Frequency:</label><br>
+                <input type="radio" id="daily" name="frequency" value="daily" required>
+                <label for="daily">Daily</label><br>
+
+                <input type="radio" id="weekly" name="frequency" value="weekly" required>
+                <label for="weekly">Weekly</label><br>
+                
+                <input type="radio" id="monthly" name="frequency" value="monthly" required>
+                <label for="monthly">Monthly</label><br><br>
+
+                <button type="submit" class="btn btn-green px-5">Subscribe</button>
+            </form>
+            <!-- Subscription form ends here -->
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 EatSmart</p>
+    </footer>
+
+    <script>
+        // Example JavaScript to handle form submission
+        document.getElementById('subscription-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            alert(`Thank you for subscribing, ${name}!`);
+
+            // Here you would typically send the data to your server
+            // using an AJAX request or similar method.
+
+            // Clear the form after submission
+            document.getElementById('subscription-form').reset();
+        });
+    </script>
+</body>
+</html>
