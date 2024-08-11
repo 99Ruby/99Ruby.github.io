@@ -1,0 +1,129 @@
+/* styles.css */
+body {
+    background-color: #FEFFFF;
+    font-family: 'Libre Baskerville', serif;
+    color: #17252A;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("https://plus.unsplash.com/premium_photo-1674106347866-8282d8c19f84?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* background-color: #57BC90; */
+    color: #ffffff;
+    text-align: center;
+    padding: 3em 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+    border-bottom: 2px solid #dddddd;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+}
+
+footer {
+    background-color: #A5A5AF;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'League Spartan', sans-serif;
+    color: #FEFFFF;
+}
+
+.wrapper {
+    background-color: #eaecf0;
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    flex: 3;
+    margin-right: 1em;
+}
+
+aside {
+    flex: 1;
+    background-color: #e5eaf5;
+    color: #000000;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+/* Table */
+
+/* Style for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'League Spartan', sans-serif;
+    border: 2px solid #dddddd;
+    
+}
+  
+/* Style for the table headers */
+th {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Style for the table cells */
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+
+
+.image-container{
+    text-align: center;
+}
+
+#analysis{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+#results{
+    padding: 20px ;
+}
+
+.index-button{
+    border: none; 
+    border-radius: 25px; 
+    padding: 10px 25px; 
+    font-weight: bold;
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.index-button:hover {
+    background-color: #ffffff;
+}
+
+.delete-button {
+    background-color: rgb(233, 88, 88);
+    color: white;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    float: right;
+}
